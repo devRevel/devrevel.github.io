@@ -633,10 +633,10 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. Mauris faucibus tellus ac auctor posuere.</p>
 				</div>
 				<div class="contatct-form">
-					<form>
-						<input type="text" value="Name :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name :';}">
-						<input type="text" value="Email :" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email :';}">
-						<textarea rows="2" cols="70" onfocus="if(this.value == 'Message :') this.value='';" onblur="if(this.value == '') this.value='Message :';" >Message :</textarea>
+					<form action="https://formspree.io/contactdevrevel@gmail.com" method="POST">
+						<input type="text" value="Name :" name="name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name :';}">
+						<input type="text" value="Email :" name="replyto" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email :';}">
+						<textarea rows="2" cols="70" name="Message" onfocus="if(this.value == 'Message :') this.value='';" onblur="if(this.value == '') this.value='Message :';" >Message :</textarea>
 						<input type="submit" value="Send" />
 					</form>
 				</div>
