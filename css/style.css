@@ -60,6 +60,7 @@ body{
 	width: 45px;
 	display: inline-block;
 	vertical-align: initial;
+	background: url(../images/logo.png) no-repeat 0px 0px;
 	margin-right: 7px;
 }
 .logo a{
