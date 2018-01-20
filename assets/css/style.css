@@ -145,12 +145,14 @@ h2 {
     line-height: 3rem;
     margin-bottom: 35px;
     font-family: 'latobold';
+    margin-left: 3%;
 }
 h3 {
     font-size:1.25rem;
     line-height: 2.5rem;
     margin-bottom:20px;
     font-family: 'latobold';
+
 }
 h4 {
     font-size: 2.0625rem;
@@ -253,7 +255,8 @@ ul{
 .overlay {
      /* background-color: rgba(97, 22, 204, 0.65);  */
     width: 100%;
-    height: 750px;
+    height: 100%;
+    background-size: cover;
 }
 .home-overlay {
     background-color: rgba(94, 154, 40, 0.7);
@@ -523,7 +526,7 @@ input::-ms-input-placeholder {
     background-color: transparent; 
     border-color: transparent; 
     transition: all .6s;
-    margin: 15px auto;
+    margin: 10px auto;
 }
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
     color:#fff;
@@ -560,16 +563,16 @@ input::-ms-input-placeholder {
 }
 
 .home .main_home{
-    padding-top: 250px;
+    padding-top: 180px;
 }
 
 .home .main_home h1{
     color: #fff;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 .home .main_home p.subtitle{
     color: #fff;
-    padding-bottom: 25px;
+    padding-bottom: 40px;
     font-family: 'latolight';
     font-size:2.0625rem;
 	line-height:3rem;
@@ -743,6 +746,7 @@ input::-ms-input-placeholder {
 .single_mixi_portfolio{
     position:relative;
     float: left;
+    border-style: groove;
     border: 3px solid #fff;
     width:100%;
 }
@@ -882,7 +886,7 @@ input::-ms-input-placeholder {
 }
 .single_message_right_info li a{
     color: #fff;
-    font-size: 0.8125rem;
+    font-size: 2.2rem;
     padding-bottom: 2px;
     display: inline-block;
 }
