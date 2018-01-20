@@ -35,10 +35,10 @@ jQuery(document).ready(function ($) {
      * Counter 
      ---------------------------------------------*/
 
-    $('.statistic-counter').counterUp({
-        delay: 10,
-        time: 2000
-    });
+    // $('.statistic-counter').counterUp({
+    //     delay: 10,
+    //     time: 2000
+    // });
 
 
 
