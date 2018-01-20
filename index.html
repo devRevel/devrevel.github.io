@@ -32,6 +32,7 @@
         <link rel="stylesheet" href="assets/fonts/stylesheet.css">
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/custombox.min.css">                
 
         <link href="http://fonts.googleapis.com/css?family=Lato:300|Libre+Franklin|Open+Sans|Poiret+One " rel="stylesheet" type="text/css" />
 
@@ -265,7 +266,7 @@
                                     <img src="assets/images/troika.png" alt="" />
                                     <div class="mixi_portfolio_overlay">
                                         <div class="overflow_hover_text">
-                                            <a href=""><i class="fa fa-info"></i></a>
+                                            <a data-demo='{"content":{"effect":"makeway", "target":"#troikaMod"}}'><i class="fa fa-info"></i></a>
                                             <a href="https://troika.ieeedtu.com" target="_blank"><i class="fa fa-link"></i></a>
                                         </div>
                                     </div>
@@ -492,6 +493,13 @@
         </footer>
 
 
+        <div id="troikaMod" class="demo-modal">
+            <a href="javascript:void(0);" onclick="Custombox.modal.close();" class="demo-close"><i class="fa fa-times"></i></a>
+            <button type="button" class="btn btn-outline btn-info demo-close-btn" style="display: none;" onclick="Custombox.modal.close();">Close</button>
+            <br>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          </div>
+
 
         <!-- START SCROLL TO TOP  -->
 
@@ -508,6 +516,20 @@
 
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+
+        <script src="assets/js/custombox.min.js"></script>
+        <script src="assets/js/custombox.legacy.min.js"></script>
+        <script>
+        // Instantiate new modal
+        $(document).on('click', '[data-demo]', function() {
+            var options = $(this).data('demo');
+            if (!options.content.target) {
+              options.content.target = '#demo-modal';
+            }
+        
+            new Custombox.modal(options).open();
+          });
+        </script>
 
     </body>
 </html>
